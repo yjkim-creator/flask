@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/login" method="POST" name="myform">
+        아이디 : <input type="text" name="userid" id=""><br/>
+        패스워드 : <input type="password" name="passwd" id="">
+        <br>
+        <input type="button" value="로그인" onclick="goSend()">
+    </form>
+</body>
+</html>
+
+<script>
+    function goSend(){
+        var frm = document.myform;
+        frm.submit();
+    }
+</script>
